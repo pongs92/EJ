@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_splash" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:hint="E - mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/emailInput"
+        android:layout_below="@+id/emailInput"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordInput"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/signupButton"
+        android:text="Log in"
+        />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/passwordInput"
+        android:layout_alignTop="@+id/loginButton"
+        android:text="Sing up" />
+
+    <CheckBox
+        android:id="@+id/autoLogincheckbox"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Remember login" />
+
+
+</RelativeLayout>
